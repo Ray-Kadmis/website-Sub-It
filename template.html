@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-xl ">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#"><img class="logo" src="assets\SUB-IT - LOGO 1.png"
+                    alt="Sub-It Logo"></a>
+
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" style="padding-left: 35%;">
+
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 40px; background-color: white;">Menu</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="aboutUs.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="whyUs.html">Why Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="Employers.html">Looking For Staff?</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="JobSeeker.html">Looking For job?</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="Jobs.html">Jobs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="Locations.html">Locations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                How We Work
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="website-Sub-It\Our-Approach.html">Our Approach</a></li>
+                                <li><a class="dropdown-item" href="website-Sub-It\Our Statistics.html">Our Statistics</a></li>
+                                <li><a class="dropdown-item" href="website-Sub-It\Our Guarantee.html">Our Guarantee</a></li>
+                                <li><a class="dropdown-item" href="website-Sub-It\Our Clients.html">Our Clients</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Staffing.html">Staffing</a></li>
+                                <li><a class="dropdown-item" href="TemporaryStaff.html">Hire Temp</a></li>
+                                <li><a class="dropdown-item" href="adminStaff.html">Admin</a></li>
+                                <li><a class="dropdown-item" href="CateringStaff.html">Catering</a></li>
+                                <li><a class="dropdown-item" href="website-Sub-It\hospitality.html">Hospitality</a></li>
+                                <li><a class="dropdown-item" href="SchoolStaff.html">Acadamics</a></li>
+                                <li><a class="dropdown-item" href="ReceptionStaff.html">Receptionist</a></li>
+                                <li><a class="dropdown-item" href="PersonalAssistant.html">PA</a></li>
+                                <li><a class="dropdown-item" href="website-Sub-It\construction.html">Construction</a></li>
+                                <li><a class="dropdown-item" href="EventStaff.html">Events</a></li>
+                                <li><a class="dropdown-item" href="IndustrialStaff.html">Industrial</a></li>
+                                <li><a class="dropdown-item" href="warehouse.html">Warehouse</a></li>
+                                <li><a class="dropdown-item" href="Picker&Packer.html">Packers</a></li>
+                                <li><a class="dropdown-item" href="VanDrivers.html">Drivers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <a href="Login.html" class="login-button">Login</a> <a href="register.html" class="login-button">Sign Up</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <div class="devide">
+
+        </div>
+
+        <div class="container2 $orange-500">
+            <div class="text1 poppins-medium">
+                POST A JOB
+            </div>
+            <p class="AUpath">
+                HOME <i class="fa-solid fa-arrow-right-long"></i> JOB POSTING
+            </p>
+        </div>
+
+        <div class="container3 ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                            <!-- CV REG SEC -->
+                            <div class="overlayBG3 regSec">
+                                <div class="overlay3">
+                                    <img style="margin-bottom: 40px;" src="assets/SUB-IT - LOGO 3.png" alt="">
+                                    <p style="color: aliceblue;" class="text-center"> Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Maiores, perferendis!</p>
+                                    <a href="" class="fanchorBtn"><button class="fbutton"><i
+                                                class="fa-solid fa-circle-plus"></i> CV Registration</button></a>
+                                </div>
+                            </div>
+
+                            <!-- JOB PORTAL SEC-->
+                            <div class="overlayBG3">
+                                <div class="overlay3">
+                                    <p style="color: aliceblue;" class="text-center">Download The App Now!</p>
+                                    <img style="margin-bottom: 40px;" src="assets/SUB-IT - LOGO 3.png" alt="">
+
+                                    <a href="" class="fanchorBtn">
+                                        <button class="fbutton2">
+                                            <i class="fa-brands fa-google-play"></i> PLAYSTORE
+                                        </button>
+                                    </a>
+                                    <a href="" class="fanchorBtn">
+                                        <button class="fbutton2">
+                                            <i class="fa-brands fa-apple"></i> APPLESTORE
+                                        </button>
+                                    </a>
+
+
+
+                                </div>
+                            </div>
+                            <!--HIRE A TEMP SEC-->
+                            <div class="HireTemp">
+                                <h5 class="HireTempH5">Hire a Temp</h5>
+                                <a href="adminStaff.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-caret-right"></i>Administerative</p>
+                                </a>
+                                <a href="ReceptionStaff.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-caret-right"></i>Receptionist</p>
+                                </a>
+                                <a href="PersonalAssistant.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-caret-right"></i>PA</p>
+                                </a>
+                                <a href="CateringStaff.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-caret-right"></i>Kitchen Assistant</p>
+                                </a>
+                                <a href="CateringStaff.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-caret-right"></i>Chef/Cook</p>
+                                </a>
+                                <a href="Home.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>KP</p>
+                                </a>
+                                <a href="generallabourer.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>General Labourer</p>
+                                </a>
+                                <a href="carpenter.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>Multi-Skilled
+                                        Operative</p>
+                                </a>
+                                <a href="Home.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>Handyman</p>
+                                </a>
+                                <a href="BusDrivers.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>driver</p>
+                                </a>
+                                <a href="warehouse.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>Warehouse Operative
+                                    </p>
+                                </a>
+                                <a href="ITstaff.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>IT Professional</p>
+                                </a>
+                                <a href="DataEntery.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>Data Entery Staff</p>
+                                </a>
+                                <a href="Home.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>Career</p>
+                                </a>
+                                <a href="Nurses.html">
+                                    <p class="HireTempPara"><i class="fa-solid fa-circle-plus"></i>Nurse</p>
+                                </a>
+                                <a href="SubmitAJob.html" class="fanchorBtn"><button class="fbutton2">BOOK NOW</button></a>
+                            </div>
+                        </div>
+                        <!-- ACCORDION SECTION-->
+                        <div class="accordion-sec">
+                            <h2>WHY WORKERS DIRECT?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptatum.</p>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Accordion Item #4
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- QUICK SELCT -->
+                        <div class="row quick">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-regular fa-square-check quick-icon"></i><br>
+                                <h3>Quick Hire</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                    officiis ea consequatur doloremque nisi. Voluptates reiciendis eum nisi? Itaque,
+                                    sed.</p>
+
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-regular fa-hand-point-down quick-icon"></i><br>
+                                <h3>No Upfront Fees</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                    officiis ea consequatur doloremque nisi. Voluptates reiciendis eum nisi? Itaque,
+                                    sed.</p>
+
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-solid fa-graduation-cap quick-icon"></i><br>
+                                <h3>Expertise</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                    officiis ea consequatur doloremque nisi. Voluptates reiciendis eum nisi? Itaque,
+                                    sed.</p>
+
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-solid fa-chess-knight quick-icon"></i><br>
+                                <h3>Modern Recruitment Strategies</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                    officiis ea consequatur doloremque nisi. Voluptates reiciendis eum nisi? Itaque,
+                                    sed.</p>
+
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-solid fa-list-check quick-icon"></i><br>
+                                <h3>Right Staff on Right time</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                    officiis ea consequatur doloremque nisi. Voluptates reiciendis eum nisi? Itaque,
+                                    sed.</p>
+
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-solid fa-paper-plane quick-icon"></i><br>
+                                <h3>No Placement, No Fee</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
+                                    et! Itaque,
+                                    similique! Veniam quas aspernatur itaque maiores harum ullam 
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- RELVANT EXPERIENCE SEC -->
+                        <div class="row quick">
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-regular fa-square-check quick-icon"></i><br>
+                                <h3>Relevant Experience</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                    officiis ea consequatur doloremque nisi. Voluptates reiciendis eum nisi? Itaque,
+                                    sed.</p>
+
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-regular fa-hand-point-down quick-icon"></i><br>
+                                <h3>24/7 Availability</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                    officiis ea consequatur doloremque nisi. Voluptates reiciendis eum nisi? Itaque,
+                                    sed.</p>
+
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                                <i class="fa-solid fa-paper-plane quick-icon"></i><br>
+                                <h3>Flexible & Reliable</h3>
+                                <p class="quickPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                    officiis ea consequatur doloremque nisi. Voluptates reiciendis eum nisi? Itaque,
+                                    sed.</p>
+
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                            
+
+        <div style="background-color: #dca201;">
+
+            <div class="row">
+                <div class="box col-lg-2 col-md-4 col-sm-12 text-center">
+                    <h1>
+                        <div class="counter">52947</div>+
+                    </h1>
+                    <p class="stats">WORKERS</p>
+                </div>
+                <div class=" box col-lg-2 col-md-4 col-sm-12 text-center">
+                    <h1>
+                        <div class="counter">98</div>%
+                    </h1>
+                    <p class="stats">ENJOY WORK WITH US</p>
+                </div>
+                <div class=" box col-lg-2 col-md-4 col-sm-12 text-center">
+                    <h1>
+                        <div class="counter">92</div>%
+                    </h1>
+                    <p class="stats">RETAINED WORKERS</p>
+                </div>
+                <div class=" box col-lg-2 col-md-4 col-sm-12 text-center">
+                    <h1>
+                        <div class="counter">572812</div>+
+                    </h1>
+                    <p class="stats">WORKED HOURS</p>
+                </div>
+                <div class=" box col-lg-2 col-md-4 col-sm-12 text-center">
+                    <h1>
+                        <div class="counter">1200</div>+
+                    </h1>
+                    <p class="stats">CLIENTS</p>
+                </div>
+                <div class=" box col-lg-2 col-md-4 col-sm-12 text-center">
+                    <h1>
+                        <div class="counter">1434</div>+
+                    </h1>
+                    <p class="stats">SITES</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+        <script>
+            $(document).ready(function () {
+                $(".counter").counterUp({
+                    delay: 20,
+                    time: 1300
+                });
+            });
+        </script>
+<div class="row JAsec">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <h2>JOB ADVERTISEMENT</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, saepe exercitationem repellat
+            excepturi corrupti vero tempora quas atque consectetur soluta iste corporis incidunt voluptas
+            tenetur ipsum porro consequuntur perferendis aspernatur? Quasi sed sit id beatae ad aperiam quas!
+            Iure, alias! Accusamus illo quasi architecto vitae, suscipit ab molestias dolore! Dignissimos!</p>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa-solid fa-user AUicon"></i>
+                    </div>
+                    <div class="col-11">
+                        <h3> <a href="register.html" class="AUanchor">1. REGISTER </a>/<a href="Login.html" class="AUanchor"> LOGIN</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi numquam et nam quo
+                            ipsa laudantium, fuga a doloremque adipisci vero voluptates, fugit harum qui
+                            praesentium quis illum, sunt aliquid.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa-solid fa-magnifying-glass AUicon"></i>
+                    </div>
+                    <div class="col-11">
+                        <h3><a href="postAJob.html" class="AUanchor">2. POST A JOB</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi numquam et nam quo
+                            ipsa laudantium, fuga a doloremque adipisci vero voluptates, fugit harum qui
+                            praesentium quis illum, sunt aliquid.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa-solid fa-address-card AUicon"></i>
+                    </div>
+                    <div class="col-11">
+                        <h3 class="h3AU">3. WE WILL FIND THE RIGHT MATCH</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi numquam et nam quo
+                            ipsa laudantium, fuga a doloremque adipisci vero voluptates, fugit harum qui
+                            praesentium quis illum, sunt aliquid.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa-brands fa-get-pocket AUicon"></i>
+                    </div>
+                    <div class="col-11">
+                        <h3 class="h3AU">4. JOB DONE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi numquam et nam quo
+                            ipsa laudantium, fuga a doloremque adipisci vero voluptates, fugit harum qui
+                            praesentium quis illum, sunt aliquid.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+    </main>
+
+    <footer>
+        <div class="overlayBG2">
+
+            <div class="overlay2">
+                <div class="footwrapper">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <img src="assets/SUB-IT - LOGO 1.png" alt="">
+                            <h2 class="text-center">WHO ARE WE?</h2>
+                            <p class="fpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                asperiores corrupti explicabo provident repudiandae tempore neque, magnam totam amet
+                                doloribus, voluptates excepturi sapiente quia itaque voluptate dolores, ad nisi fuga.
+                            </p >  <a href="" class="fread"><p class="fread text-center" ><i class="fa-solid  fa-circle-plus"></i>Read More</p></a>
+                           
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12 col-sm-12">
+                                    <h2 class="text-center">WHAT WE DO</h2>
+                                    <ul>
+                                        <li class="fitem">
+                                            <a href="TemporaryStaff.html" class="fanchor">Temporary Staff</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="QuickStaff.html" class="fanchor">Quick Staffing</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="TempToPerm.html" class="fanchor">Temp To Perm
+                                                Recruitment</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="nationwideTemp.html" class="fanchor">Nationwide Temp</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="PayrollServices.html" class="fanchor">Payroll Service</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="ReferenceCheck.html" class="fanchor">Reference Check</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="CandidateScreening$Selection.html" class="fanchor">Candidate Screening &
+                                                Selection</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="on Site Recruitment.html" class="fanchor">On Site Recruitment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-12 col-sm-12">
+                                    <h2 class="text-center">CLIENTS</h2>
+                                    <ul>
+                                        <li class="fitem">
+                                            <a href="TemporaryStaff.html" class="fanchor">Hire The Best Talent</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="HowWeWork.html" class="fanchor">How We Work</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="whyUs.html" class="fanchor">Why Workers Direct</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="QuickPlacement.html" class="fanchor">Quick Placement</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="CostEffectiveWaysToHire.html" class="fanchor">Most Cost Effective Way to Hire</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="Our Guarantee.html" class="fanchor">Our Guarantee</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="FAQ.html" class="fanchor">FAQs</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-12 col-sm-12">
+                                    <h2 class="text-center">CANDIDATES</h2>
+                                    <ul>
+                                        <li class="fitem">
+                                            <a href="LatestJobs.html" class="fanchor">Find The Perfect Job</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="ImmediateStart.html" class="fanchor">Immediate Sttart</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="TemporaryJobs.html" class="fanchor">Temporary Jobs</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="TemporarytoPermanentJobs.html" class="fanchor">Temp To Perm Jobs</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="HowWeWork.html" class="fanchor">How We Work</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="whyUs.html" class="fanchor">Why Workers Direct</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="CareerAdvice.html" class="fanchor">Career Advice</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="timeSheet.html" class="fanchor">Time Sheet</a>
+                                        </li>
+                                        <li class="fitem">
+                                            <a href="" class="fanchor">Download Mobile App</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-12 col-sm-12">
+                                    <h2 class="text-center">CONTACT US</h2>
+                                    <h3>HEAD OFFICE</h3>
+                                    <p class="fpara">344-348 High road, Ilford IG1 1QP</p>
+                                    <h3>LOCATIONS</h3>
+                                    <p class="fpara">London</p>
+                                    <p class="fpara">Manchester</p>
+                                    <p class="fpara">Birmingham</p>
+                                    <p class="fpara">Glasgow</p>
+
+
+
+
+
+
+                                    <h3>EMAIL</h3>
+                                    <p class="fpara">someemail@gmail.com</p>
+                                    <h3>PHONE NO.</h3>
+                                    <p class="fpara">000-000-00000-00-0</p>
+                                    <a href="" class="fanchorBtn"><input type="button" class="fbutton" value="Get A Quote"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center fpara2">
+                            Our Partners: Staff Direct - Labourer Agency - Recruitement Agency London (RAL) - Temporary
+                            Staffing Agency (TSA) - Temping Agency
+                        </div>
+                        <div class="col-12 text-center" >
+                            <a href="" class="fanchor"><i class="fa-brands ficon fa-google-plus-g"></i></a>
+                            <a href="" class="fanchor"><i class="fa-brands ficon fa-facebook"></i></a>
+                            <a href="" class="fanchor"><i class="fa-brands ficon fa-square-x-twitter"></i></a>
+                            <a href="" class="fanchor"><i class="fa-brands ficon fa-linkedin"></i> </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

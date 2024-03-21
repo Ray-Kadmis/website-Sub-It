@@ -1,0 +1,859 @@
+html {
+    padding: 0px;
+    margin: 0px auto;
+
+
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.login-button {
+    background-color: #283D4D;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 5px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    text-align: center;
+    container: fluid;
+}
+
+.offcanvas-title {
+    text-size-adjust: 20px;
+}
+
+img {
+    height: 50px;
+}
+
+.login-button:hover {
+    background-color: #E5B221;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 20px;
+}
+
+.navbar-toggler:focus,
+.btn-class:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #E5B221
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+
+}
+
+@media(min-width:300px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #E5B221;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active:before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.dropdown-item{
+    font-size: 14px;
+    color: #283D4D;
+
+}
+
+.dropdown-item:hover{
+    font-size: 13px;
+    color: #cb9a14;
+    transition: ease-in-out 0.2s;
+
+}
+.devide {
+    margin-top: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #283D4D;
+    margin: 0 auto;
+}
+
+.container2 {
+    display: flexbox;
+    width: 100%;
+    height: 25%;
+    background-color: #E5B221;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    color: #1a2934;
+    
+}
+.overlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(203, 154, 20, 0.5);
+    display: flex;
+    align-items: left;
+    /* Align items to the top */
+    justify-content: center;
+    /* Justify content to the start (left) */
+    flex-direction: column;
+    /* Set flex-direction to column to stack items vertically */
+    padding: 10px;
+    /* Add some padding for better readability on small screens */
+    
+}
+.overlayBG4 {
+    width: 100%;
+    height: 400px;
+    background: url(assets/HEADERIMG.jpeg);
+    background-size: cover;
+    position: relative;
+    padding-top: 0%;
+    
+}
+
+.container3 {
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff;
+
+}
+
+.text1 {
+
+    padding: 4% 20% 0px 20%;
+    font-size: 60px;
+}
+
+.para1 {
+    display: block;
+    padding: 1% 20% 0px 20%;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 970px) {
+
+    .text1 {
+        padding: 1rem 0px 0px 60px;
+    }
+
+    .para1 {
+        padding: 20px 62px 0px 62px;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-bottom: 2%;
+    margin-top: 5%;
+}
+
+p {
+    font-size: 1rem;
+    padding-bottom: 2%;
+    color: #283D4D;
+}
+
+.aboutImgs {
+    max-width: 400px;
+    max-height: 300px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+}
+
+.subItImgs {
+    max-width: 400px;
+    max-height: 300px;
+    margin-bottom: 20px;
+
+}
+
+a {
+    display: block;
+    padding: 10px 0px 10px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #cb9a14;
+    font-size: 12px;
+}
+
+i {
+    padding-right: 10px;
+}
+
+.highlight {
+    color: #cb9a14;
+}
+
+.gridImgs {
+
+    height: 200px;
+    width: 200px;
+    padding-right: 10px;
+}
+
+.gridImgs:hover {
+
+    height: 300px;
+    width: 300px;
+    transition: ease-in-out 0.2s;
+    opacity: 50%;
+    overflow-x: hidden;
+}
+
+h3 {
+    font-size: large;
+}
+
+.gridpara {
+    font-size: 12px;
+}
+
+.gridbox {
+    padding-top: 30px;
+}
+
+.learn {
+    padding: 10%;
+}
+
+.counter {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.jobCard {
+    width: 200px;
+    height: auto;
+}
+
+swiper-container {
+    width: 100%;
+    height: 110%;
+}
+
+.jobBanner {
+    height: 100%;
+    width: 100%;
+    transition: all 0.1s ease-out;
+}
+
+.LJ-img {
+    height: 120px;
+    padding: 10px;
+}
+
+.applyBtn {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    margin-right: 10px;
+    margin-top: 40px;
+    color: #283D4D;
+    background-color: #E5B221;
+    border: none;
+    border-radius: 50px 50px;
+    font-size: 15px;
+    padding: 0px 10px 0px 10px;
+}
+
+.jobText {
+    padding-top: 10px;
+}
+
+.keys {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 12px;
+    padding-top: 10px;
+
+}
+
+.jobBanner:hover {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #E5B221;
+}
+
+.jobBanner:hover .keys {
+    transition: all 0.3s ease-in-out;
+    background-color: #E5B221;
+}
+
+swiper-slide {
+    padding-bottom: 50px;
+}
+
+.overlayBG {
+    width: 100%;
+    height: 300px;
+    background: url(assets/download.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(203, 154, 20, 0.5);
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the top */
+    justify-content: flex-start;
+    /* Justify content to the start (left) */
+    flex-direction: column;
+    /* Set flex-direction to column to stack items vertically */
+    padding: 10px;
+    /* Add some padding for better readability on small screens */
+}
+
+.col-12.con1 h6 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    /* Align text to the left */
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.mySwiper{
+    height: max-content;
+}
+
+.testImg {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    height: 150px;
+    width: 150px;
+
+}
+
+.testimonialwraper {
+    padding-top: 40px;
+}
+
+.testText2 {
+    color: black;
+    font-size: 1.2rem;
+    display: flexbox;
+}
+
+.testIcon {
+    display: flexbox;
+}
+
+.testText1 {
+    padding-top: 20px;
+    font-size: 1rem;
+    color: black;
+    display: flexbox;
+}
+
+.highlight2 {
+    color: rgb(35, 35, 35);
+    display: inline;
+    font-size: x-large;
+    display: flexbox;
+}
+
+@media (max-width: 900px) {
+
+    .overlayBG {
+        width: 100%;
+        height: 500px;
+        background: url(assets/download.jpeg);
+        background-size: cover;
+        position: relative;
+    }
+
+}
+
+
+
+@media (max-width: 570px) {
+
+    .overlayBG {
+        width: 100%;
+        height: 600px;
+        background: url(assets/download.jpeg);
+        background-size: cover;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .overlayBG {
+        width: 100%;
+        height: 750px;
+        background: url(assets/download.jpeg);
+        background-size: cover;
+        position: relative;
+    }
+
+}
+
+.slickImg {
+    height: 200px;
+    width: 200px;
+
+}
+
+.overlayBG2 {
+    width: 100%;
+    height: 1000px;
+    background: url(assets/footer.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(203, 154, 20, 0.5);
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the top */
+    justify-content: flex-start;
+    /* Justify content to the start (left) */
+    flex-direction: column;
+    /* Set flex-direction to column to stack items vertically */
+    padding: 10px;
+    /* Add some padding for better readability on small screens */
+}
+
+
+@media (max-width: 950px) {
+
+    .overlayBG2 {
+        width: 100%;
+        height: 3000px;
+        background: url(assets/footer.jpg);
+        background-size: cover;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .overlayBG2 {
+        width: 100%;
+        height: 3500px;
+        background: url(assets/footer.jpg);
+        background-size: cover;
+        position: relative;
+    }
+
+}
+
+
+.footwrapper {
+    width: 100%;
+    padding: 40px;
+}
+
+.fanchor {
+    font-size: 16px;
+    color: #000000;
+    display: inline;
+    padding: 10px;
+
+}
+
+.fpara {
+    font-size: 16px;
+    color: #000000;
+
+}
+
+.fpara2 {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 100px;
+}
+
+.fitem {
+    margin-top: 20px;
+
+}
+
+.ficon {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.fanchor :hover {
+
+    color: #ffffff;
+    display: inline;
+    padding: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+.ficon :hover {
+    color: #ffffff;
+    display: inline;
+    padding: auto;
+    transition: ease-in-out 0.3s;
+    font-size: 40px;
+}
+
+.fitem :hover {
+    color: #ffffff;
+    transition: ease-in-out 0.3s;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+.fread {
+    color: #000000;
+
+}
+
+.fread:hover {
+    color: #ffffff;
+    font-size: 18px;
+    transition: ease-in-out 0.3s;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+
+}
+
+.fbutton {
+    background-color: #ffe7a3;
+    color: #000000;
+    padding: 10px 35px 10px 35px;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.fanchorBtn:hover .fbutton {
+    background-color: #614700;
+    color: #ffe7a3;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    border-radius: 24px 24px 24px 24px;
+    transition: ease-in-out 0.3s;
+}
+
+.fanchorBtn {
+    width: auto;
+    height: auto;
+    padding: 0px;
+}
+
+.headIcon {
+    font-size: 50px;
+    color: #cb9a14;
+}
+
+.diamond {
+    width: 100px;
+    /* Adjust the size as needed */
+    height: 100px;
+    /* Adjust the size as needed */
+    background: #E5B221;
+    position: relative;
+    transform: rotate(45deg);
+    margin-top: 60%;
+    /* Adjust margin as needed */
+    border-radius: 20px;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.Or {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    /* Center text and rotate to match diamond */
+    color: #283D4D;
+    /* Text color */
+    font-size: 24px;
+    /* Adjust font size as needed */
+}
+
+.sec2 {
+    margin-left: 0%;
+
+}
+
+.sec1 {
+    margin-right: 0%;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+}
+
+.EvJ {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 995px) {
+    .EvJ {
+        visibility: hidden;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 0px;
+        width: 0px;
+    }
+}
+
+.AUanchor {
+    display: inline;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+.AUanchor:hover {
+    color: #cb9a14;
+    transition: ease-in-out 0.2s;
+}
+
+.AUicon {
+
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.h3AU {
+    font-size: 20px;
+}
+
+.AUpath {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+@media (max-width: 962px) {
+    .AUpath {
+        margin-left:5%;
+        margin-top: 5%;
+    }
+}
+.overlayBG3 {
+    width: 100%;
+    height: 400px;
+    background: url(assets/background3.jpg);
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(203, 154, 20, 0.5);
+    display: flex;
+    align-items: center;
+    /* Align items to the top */
+    justify-content: center;
+    /* Justify content to the start (left) */
+    flex-direction: column;
+    /* Set flex-direction to column to stack items vertically */
+    padding: 10px;
+    /* Add some padding for better readability on small screens */
+    border-radius: 30px;
+}
+
+.fbutton2 {
+    background-color: #ffe7a3;
+    color: #000000;
+    padding: 10px 35px 10px 35px;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 50px;
+}
+
+.fanchorBtn:hover .fbutton2 {
+    background-color: #614700;
+    color: #ffe7a3;
+
+    border: none;
+    border-radius: 24px 24px 24px 24px;
+    transition: ease-in-out 0.3s;
+}
+
+/*h5 {
+    background-color: #E5B221;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 20px;
+}*/
+
+
+.HireTempIcon {
+    margin-left: 20px;
+}
+
+.HireTempPara {
+    padding: 0%;
+    margin: 0%;
+}
+
+.JAsec {
+    padding: 50px;
+}
+
+.regSec {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    background-color: white;
+    border-color: #cb9a14;
+    border-width: 2px;
+}
+
+.accordion-header {
+    padding: 0%;
+    width: 100%;
+    margin: 0%;
+    background-color: #cb9a14;
+    border: none;
+    box-shadow: none;
+}
+
+
+.accordion-button {
+    outline: none;
+    background-color: #cb9a14;
+    font-size: 16px;
+    border-width: 0px;
+
+
+}
+
+.accordion-button:focus {
+    outline: none;
+    background-color: #cb9a14;
+    font-size: 16px;
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #E5B221;
+
+}
+
+.accordion-sec{
+    
+    padding: 10%;
+}
+
+.quick{
+    padding: 10%;
+    padding-top: 0%;
+    width: 100%;
+}
+
+.quick-icon{
+    font-size: 70px;
+    padding-bottom: 20px;
+    color: #E5B221;
+
+}
+
+.quickPara{
+    padding: 10%;
+
+}
+
+.HireTempH5{
+    background-color: #E5B221;
+    padding: 2%;
+    border-radius: 20px 20px 0px 0px ;
+    margin-top: 20px;
+}
