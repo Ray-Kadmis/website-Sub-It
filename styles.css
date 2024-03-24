@@ -857,3 +857,65 @@ swiper-slide {
     border-radius: 20px 20px 0px 0px ;
     margin-top: 20px;
 }
+
+
+form{
+    padding: 10%;
+}
+
+span{
+    color: red;
+    font-size: large;
+
+}
+.sideText{
+    color: grey;
+    font-size: 12px;
+    margin-left: 100px;
+    height: 30px;
+    display: inline;
+}
+
+label{
+    color: #cb9a14;
+    padding: 10px;
+}
+
+input{
+    border-color: #283D4D;
+    border-width: 0px 0px 0.1px 0px;
+    display: inline;
+    margin-bottom: 20px;
+
+}
+
+.subBtn{
+    border-width: 0px;
+    background-color: #cb9a14;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.resetbtn{
+    border-width: 2px;
+    background-color: #ffffff;
+    padding: 9px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #cb9a14;
+}
+
+select{
+    width: 100px;
+border-radius: 5px;
+    border-color: gray;
+}
+
+#countrySel{
+    width: 200px;
+    border-color: gray;
+    border-radius: 5px;
+}
+
