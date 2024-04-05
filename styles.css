@@ -107,18 +107,19 @@ img {
     }
 }
 
-.dropdown-item{
+.dropdown-item {
     font-size: 14px;
     color: #283D4D;
 
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     font-size: 13px;
     color: #cb9a14;
     transition: ease-in-out 0.2s;
 
 }
+
 .devide {
     margin-top: 0px;
     width: 100%;
@@ -135,8 +136,9 @@ img {
     padding-bottom: 20px;
     margin: 0 auto;
     color: #1a2934;
-    
+
 }
+
 .overlay4 {
     position: absolute;
     top: 0;
@@ -153,8 +155,9 @@ img {
     /* Set flex-direction to column to stack items vertically */
     padding: 10px;
     /* Add some padding for better readability on small screens */
-    
+
 }
+
 .overlayBG4 {
     width: 100%;
     height: 400px;
@@ -162,7 +165,7 @@ img {
     background-size: cover;
     position: relative;
     padding-top: 0%;
-    
+
 }
 
 .container3 {
@@ -388,7 +391,7 @@ swiper-slide {
     font-size: 1.5em;
 }
 
-.mySwiper{
+.mySwiper {
     height: max-content;
 }
 
@@ -715,10 +718,11 @@ swiper-slide {
 
 @media (max-width: 962px) {
     .AUpath {
-        margin-left:5%;
+        margin-left: 5%;
         margin-top: 5%;
     }
 }
+
 .overlayBG3 {
     width: 100%;
     height: 400px;
@@ -828,47 +832,48 @@ swiper-slide {
 
 }
 
-.accordion-sec{
-    
+.accordion-sec {
+
     padding: 10%;
 }
 
-.quick{
+.quick {
     padding: 10%;
     padding-top: 0%;
     width: 100%;
 }
 
-.quick-icon{
+.quick-icon {
     font-size: 70px;
     padding-bottom: 20px;
     color: #E5B221;
 
 }
 
-.quickPara{
+.quickPara {
     padding: 10%;
 
 }
 
-.HireTempH5{
+.HireTempH5 {
     background-color: #E5B221;
     padding: 2%;
-    border-radius: 20px 20px 0px 0px ;
+    border-radius: 20px 20px 0px 0px;
     margin-top: 20px;
 }
 
 
-form{
+form {
     padding: 10%;
 }
 
-span{
+span {
     color: red;
     font-size: large;
 
 }
-.sideText{
+
+.sideText {
     color: grey;
     font-size: 12px;
     margin-left: 100px;
@@ -876,12 +881,12 @@ span{
     display: inline;
 }
 
-label{
+label {
     color: #cb9a14;
     padding: 10px;
 }
 
-input{
+input {
     border-color: #283D4D;
     border-width: 0px 0px 0.1px 0px;
     display: inline;
@@ -889,7 +894,7 @@ input{
 
 }
 
-.subBtn{
+.subBtn {
     border-width: 0px;
     background-color: #cb9a14;
     padding: 10px;
@@ -898,7 +903,7 @@ input{
 
 }
 
-.resetbtn{
+.resetbtn {
     border-width: 2px;
     background-color: #ffffff;
     padding: 9px;
@@ -907,13 +912,13 @@ input{
     border-color: #cb9a14;
 }
 
-select{
+select {
     width: 100px;
-border-radius: 5px;
+    border-radius: 5px;
     border-color: gray;
 }
 
-#countrySel{
+#countrySel {
     width: 200px;
     border-color: gray;
     border-radius: 5px;
@@ -929,6 +934,103 @@ border-radius: 5px;
     margin-bottom: 5%;
 }
 
-li{
+li {
     margin: 2px;
+}
+
+.loginDiv1 {
+    
+    height: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.loginDiv2 {
+    
+    height:max-content;
+    width: 50%;
+    border-radius: 20px;
+    border-bottom: 5px solid #cb9a14; 
+    border-right: 5px solid #cb9a14;
+    border-top: 2px solid #cb9a14; 
+    border-left: 2px solid #cb9a14;
+}
+
+@media(max-width:400px) {
+    .loginDiv2 {
+    
+        height:max-content;
+        width: 100%;
+        border-radius: 20px;
+        border-bottom: 5px solid #cb9a14; 
+        border-right: 5px solid #cb9a14;
+        border-top: 2px solid #cb9a14; 
+        border-left: 2px solid #cb9a14;
+    }
+
+    }
+.loginregBtn{
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px;
+    display: inline-flex;
+   background: #cb9a14;
+    border-bottom: 2px solid; 
+    border-right: 2px solid;
+    border-top: 2px solid; 
+    border-left: 2px solid;
+    border-radius: 15px;
+    color: #000;
+}
+
+#signUp{
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    font-size: 16px;
+    padding: 5.4px;
+    display: inline-flex;
+   color: #000;
+    border-bottom: 2px solid; 
+    border-right: 2px solid;
+    border-top: 2px solid; 
+    border-left: 2px solid;
+    border-radius: 15px;
+
+}
+
+.loginBtn{
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    font-size: 16px;
+    padding: 5.4px;
+    display: inline-flex;
+   color: #000;
+    border-bottom: 2px solid; 
+    border-right: 2px solid;
+    border-top: 2px solid; 
+    border-left: 2px solid;
+    border-radius: 15px;
+
+}
+
+.logSwitch1{
+    color: #cb9a14;
+    padding: 0px;
+    margin:10px 5px 10px 5px;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.logSwitch2{
+    
+    padding: 0px;
+    margin: 0px 10px 0px 0px;
+    
+    margin-top: 10px;
 }
