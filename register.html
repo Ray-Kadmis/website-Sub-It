@@ -154,7 +154,7 @@
                 <input type="email" id="email" name="email" required><br>
                 <label for="password">Password:</label><br>
                 <input type="password" id="password" name="password" required><br><br>
-                <button type="submit" id="submitBtn" name="SignUpBtn">Sign Up</button>
+                <button type="submit" id="submitBtn" onclick="register()" name="SignUpBtn">Sign Up</button>
 
                 <a href="login.html" class="loginregBtn">Already have a Profile?</a>
             </form>
@@ -318,86 +318,8 @@
             </div>
         </div>
     </footer>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "firebase/app";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
-
-        import { getFirestore, collection, addDoc } from "firebase/firestore";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyCBubhLzDBZmwXAcjC_3laV9i9sw2OxpH0",
-            authDomain: "sub-it-1825b.firebaseapp.com",
-            projectId: "sub-it-1825b",
-            storageBucket: "sub-it-1825b.appspot.com",
-            messagingSenderId: "1082992891122",
-            appId: "1:1082992891122:web:696de41adf3809773f6c6b",
-            measurementId: "G-YH3BBNM56V"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        const db = getFirestore(app);
-        /* references*/
-
-
-        const userInp = document.getElementById("username");
-        const passInp = document.getElementById("password");
-        const email = document.getElementById("email");
-        const submitBtn = document.getElementById("submitBtn");
-
-        /* Validation*/
-
-        function Validation() {
-
-
-            let emailregex = /^[a-zA-Z0-9]+@(gmail yahoo|outlook)\.com$/;
-            let userregex = /^[a-zA-Z0-9]{5,}$/;
-
-
-            if (!emailregex.test(email.value)) {
-                alert("enter a valid email");
-                return false;
-            }
-
-            if (!userregex.test(userInp.value)) {
-                alert("-username can only be alphanumeric\n-username must be aleast 5 characters\n-username cannot contain spaces");
-                return false;
-            }
-            return true;
-        }
-
-        /*User Registeration*/
-
-        function RegisterUser() {
-            if (!Validation()) {
-                return;
-            }
-
-            const usersCollection = collection(db, "users"); 
-
-            // Get user data
-            const userData = {
-                username: userInp.value,
-                email: email.value,
-                password: passInp.value, 
-            };
-
-            // Add user to Firestore
-            addDoc(usersCollection, userData)
-                .then(() => {
-                    alert("User added successfully!");
-                    // Clear form or redirect to another page
-                })
-                .catch((error) => {
-                    console.error("Error adding user:", error);
-                    alert("Failed to register user. Please try again.");
-                });
-        }
-
-        /*Assign event*/
-        submitBtn.addEventListener('click', RegisterUser);
-
+    <script src="authApp">
+       
     </script>
 </body>
 

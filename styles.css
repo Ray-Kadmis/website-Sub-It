@@ -952,10 +952,10 @@ li {
     height:max-content;
     width: 50%;
     border-radius: 20px;
-    border-bottom: 5px solid #cb9a14; 
-    border-right: 5px solid #cb9a14;
-    border-top: 2px solid #cb9a14; 
-    border-left: 2px solid #cb9a14;
+    border-bottom: 5px solid #1a2934; 
+    border-right: 5px solid #1a2934;
+    border-top: 2px solid #283D4D; 
+    border-left: 2px solid #283D4D;
 }
 
 @media(max-width:400px) {
