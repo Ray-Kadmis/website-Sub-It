@@ -24,31 +24,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module">
-        //functions
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
-        //SDKs for Firebase products
-        // https://firebase.google.com/docs/web/setup#available-libraries
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyCdb9-XtcRsvNURU78nMFiU_M88Q7asa5U",
-            authDomain: "sub-it-prd.firebaseapp.com",
-            projectId: "sub-it-prd",
-            storageBucket: "sub-it-prd.appspot.com",
-            messagingSenderId: "432849286575",
-            appId: "1:432849286575:web:2a1aa3325f5983f2a76b5a",
-            measurementId: "G-LCBRM3F95J"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
-<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -146,7 +121,10 @@
                 </div>
 
             </div>
-            <a href="Login.html" class="login-button">Login</a> <a href="register.html" class="login-button">Sign Up</a>
+             <a href="Login.html" id="viewBtn1LogedOut" class="login-button ">Login</a>
+            <a href="register.html" id="viewBtn2LogedOut" class="login-button ">Sign Up</a>
+            <h4 id="displayUsername"></h4>
+            <button id="viewBtnLogedIn" class="login-button">Sign Out</button>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -167,27 +145,28 @@
         </div>
     </div>
 
-    <form action="Your Request Has Been Received Successfully.html">
+    <form id="JobForm" action="Your Request Has Been Received Successfully.html">
 
         <h2>
             When & How Long You Need Staff?
         </h2>
 
         <label for="" required>Job Name:<span>*</span></label>
-        <input type="text"><span class="sideText"> Enter Job Name</span>
+        <input type="text" id="jobName"><span class="sideText"> Enter Job Name</span>
         <br>
         <label for="" required>Job Start Date:<span>*</span></label>
-        <input type="date"> to <input type="date" name="" id=""><span class="sideText"> Enter: Job Start-Date to Job
+        <input type="date" id="startDate"> to <input type="date" name="" id="endDate"><span class="sideText"> Enter: Job
+            Start-Date to Job
             End-Date</span>
         <br>
-        <label for="">All Day:</label><input type="checkbox" name="" id="">
+        <label for="">All Day:</label><input type="checkbox" name="" id="allDay">
         <br>
         <label for="" required>Time:<span>*</span></label>
-        <input type="time" name="" id=""> to <input type="time" name="" id=""><span class="sideText"> Enter Job Timings
+        <input type="time" name="" id="startTime"> to <input type="time" name="" id="endTime"><span class="sideText"> Enter Job Timings
             e.g 9AM to 5PM</span>
         <br>
         <label for="" required>Repeat:<span>*</span></label>
-        <select name="" id="">
+        <select name="" id="typeOfJob">
             <option value="">Daily</option>
             <option value="">Weekly</option>
             <option value="">Every Weekend (Monday to Friday)</option>
@@ -197,7 +176,7 @@
             Basic Information
         </h2>
         <label for="" required>No. of Staff Required:<span>*</span></label>
-        <select name="" id="">
+        <select name="" id="staffNumber">
             <option value="">1-2</option>
             <option value="">3-6</option>
             <option value="">7-10</option>
@@ -206,14 +185,14 @@
         </select>
         <br>
         <label for="address" required>Job Location/Post Code:<span>*</span></label><br>
-        <input type="text" id="address-line" name="address-line1" autocomplete="address-line"
+        <input type="text" id="addressLine" name="address-line1" autocomplete="address-line"
             placeholder="Address Line"><br>
 
         <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="City"><br>
         <input type="text" id="state" name="state" autocomplete="address-level1" placeholder="State"><br>
         <input type="text" id="zip" name="zip" autocomplete="postal-code" placeholder="Zip/Postal Code"><br>
-        <select id="countrySel" name="" id="">
-            <option value="  " selected>Select a country</option>
+        <select id="countrySel" name="" placeholder="Select a Country">
+           
             <option value="--">Not Specified</option>
             <option value="AF">Afghanistan</option>
             <option value="AL">Albania</option>
@@ -459,37 +438,37 @@
 
 
         <label for="job-title" required>Job Title:<span>*</span></label><br>
-        <input type="text" id="job-title" name="job-title"><br><br>
+        <input type="text" id="jobTitle" name="job-title"><br><br>
 
         <label required for="required-experience">Required Experience in Years:</label><br>
-        <input type="number" min="0" max="20"> to <input type="number" min="0" max="20">
+        <input id="XPstart" type="number" min="0" max="20"> to <input id="XPend" type="number" min="0" max="20">
         <br>
         <label for="temp-status">Temp Status:</label><br>
-        <select id="temp-status" name="temp-status">
+        <select id="tempStatus" name="temp-status">
             <option value="none">None</option>
             <option value="temp-assigned">Temp Assigned</option>
             <option value="temp-unassigned">Temp Unassigned</option>
         </select><br><br>
 
         <label for="job-description">Job Description / Main Responsibilities:</label><br>
-        <textarea id="job-description" name="job-description" rows="4" cols="50"></textarea><br><br>
+        <textarea id="jobDescription" name="job-description" rows="4" cols="50"></textarea><br><br>
 
         <h2>Attachment Information</h2>
         <label for="upload-others">Upload Others:</label>
-        <input type="file" id="upload-others" name="upload-others" accept=".pdf"><br><br>
+        <input type="file" id="uploadOthers" name="upload-others" accept=".pdf"><br><br>
 
         <label for="upload-job-summary">Upload Job Summary:</label>
-        <input type="file" id="upload-job-summary" name="upload-job-summary" accept=".pdf"><br><br>
+        <input type="file" id="uploadJobSummary" name="upload-job-summary" accept=".pdf"><br><br>
 
         <h2>Contact Information</h2>
         <label for="contact-name" required>Contact Person's Name:<span>*</span></label><br>
-        <input type="text" id="contact-name" name="contact-name" required><br><br>
+        <input type="text" id="contactName" name="contact-name" required><br><br>
 
         <label required for="contact-email">Email:<span>*</span></label><br>
-        <input type="email" id="contact-email" name="contact-email" required><br><br>
+        <input type="email" id="contactEmail" name="contact-email" required><br><br>
 
-        <label required for="contact-number">Contact Number:<span>*</span></label><br>
-        <select id="country-code" name="country-code">
+        <label required for="contactNumber">Contact Number:<span>*</span></label><br>
+        <select id="countryCode" name="country-code">
             <option value="+1" data-icon="US">+1 USA</option>
             <option value="+93">+93 Afghanistan</option>
             <option value="+355">+355 Albania</option>
@@ -722,11 +701,11 @@
             <option value="+260">+260 Zambia</option>
             <option value="+263">+263 Zimbabwe</option>
         </select>
-        <input type="tel" id="phone-number" name="phone-number" required><br><br>
+        <input type="tel" id="phoneNumber" name="phone-number" required><br><br>
         <label for="company-name">Company Name:</label><br>
-        <input type="text"><br>
+        <input type="text" id="companyName"><br>
         <input class="formbtn resetbtn" type="reset" value="Reset">
-        <input class="formbtn subBtn" type="submit" value="Submit">
+        <input class="formbtn subBtn" id="submit" type="submit" value="Submit">
         </div>
     </form>
 
@@ -890,3 +869,8 @@
         </div>
     </footer>
 </body>
+<script src="JobsInDatabase.js" type="module"></script>
+
+
+
+</html>

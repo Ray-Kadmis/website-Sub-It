@@ -16,10 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js"></script>
-    <script src="app.js"></script>
+
 </head>
 
 <body>
@@ -103,8 +100,7 @@
                                 <li><a class="dropdown-item" href="SchoolStaff.html">Acadamics</a></li>
                                 <li><a class="dropdown-item" href="ReceptionStaff.html">Receptionist</a></li>
                                 <li><a class="dropdown-item" href="PersonalAssistant.html">PA</a></li>
-                                <li><a class="dropdown-item" href="construction.html">Construction</a>
-                                </li>
+                                <li><a class="dropdown-item" href="construction.html">Construction</a></li>
                                 <li><a class="dropdown-item" href="EventStaff.html">Events</a></li>
                                 <li><a class="dropdown-item" href="IndustrialStaff.html">Industrial</a></li>
                                 <li><a class="dropdown-item" href="warehouse.html">Warehouse</a></li>
@@ -117,7 +113,10 @@
                 </div>
 
             </div>
-            <a href="Login.html" class="login-button">Login</a> <a href="register.html" class="login-button">Sign Up</a>
+            <a href="Login.html" id="viewBtn1LogedOut" class="login-button ">Login</a>
+            <a href="register.html" id="viewBtn2LogedOut" class="login-button ">Sign Up</a>
+            <h4 id="displayUsername"></h4>
+            <button id="viewBtnLogedIn" class="login-button">Sign Out</button>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -147,15 +146,15 @@
         <div class="loginDiv2">
             <h1 class="text-center">Sign Up</h1>
 
-            <form class="text-center" id="loginForm">
+            <form class="text-center" form id="registrationForm" action="">
                 <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username" required><br>
+                <input type="text" id="regusername" name="username" required><br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="regemail" name="email" required><br>
                 <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" required><br><br>
-                <button type="submit" id="submitBtn" onclick="register()" name="SignUpBtn">Sign Up</button>
-
+                <input type="text" id="regpassword" name="password" required><br><br>
+                <button type="button" id="submitBtn" class="loginBtn" name="SignUpBtn">Sign Up</button>
+                <button type="button" class="loginBtn" id="googleBtn" name="googleBtn">Sign-Up Using Google </button>
                 <a href="login.html" class="loginregBtn">Already have a Profile?</a>
             </form>
         </div>
@@ -318,9 +317,12 @@
             </div>
         </div>
     </footer>
-    <script src="authApp">
-       
-    </script>
+
+
+
 </body>
+<script src="regapp.js" defer type="module"></script>
+<script src="googleAuthApp.js" defer type="module"></script>
+<script src="signOut.js" defer type="module"></script>
 
 </html>

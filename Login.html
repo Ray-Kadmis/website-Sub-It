@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -122,7 +121,10 @@
                 </div>
 
             </div>
-            <a href="Login.html" class="login-button">Login</a> <a href="register.html" class="login-button">Sign Up</a>
+             <a href="Login.html" id="viewBtn1LogedOut" class="login-button ">Login</a>
+            <a href="register.html" id="viewBtn2LogedOut" class="login-button ">Sign Up</a>
+            <h4 id="displayUsername"></h4>
+            <button id="viewBtnLogedIn" class="login-button">Sign Out</button>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -151,18 +153,21 @@
         <div class="loginDiv2">
             <h1 class="text-center">LOGIN</h1>
 
-            <form action="">
-                <div class="text-center"><input type="text" id="username" placeholder="Enter Username"><br><br>
-                    <input type="text" id="Password" placeholder="Enter Password">
+            <form form id="loginForm" action="">
+                <div class="text-center">
+                    <input type="email" id="email" placeholder="Enter Email">
+                    <br><br>
+                    <input type="current-password" id="password" placeholder="Enter Password">
                     <br>
                 </div>
-                <div class="form-check form-switch">
+                <!--<div class="form-check form-switch">
                     <input class="form-check-input logSwitch2" type="checkbox" role="switch"
                         id="flexSwitchCheckDefault">
                     <label class="form-check-label logSwitch1" for="flexSwitchCheckDefault">stay Logged In</label>
                 </div>
-                <br>
-                <button type="submit" class="loginBtn" id="submitBtn" name="loginBtnBtn">Login</button>
+                <br>-->
+                <button type="button" class="loginBtn" id="loginBtn" name="loginBtn">Login</button>
+                <button type="button" class="loginBtn" id="googleBtn" name="googleBtn">Sign-In Using Google </button>
                 <a href="register.html" class="loginregBtn">Register</a>
 
 
@@ -328,91 +333,8 @@
             </div>
         </div>
     </footer>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
 
-        import { getFirestore, ref, get, child, set } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyCBubhLzDBZmwXAcjC_3laV9i9sw2OxpH0",
-            authDomain: "sub-it-1825b.firebaseapp.com",
-            projectId: "sub-it-1825b",
-            storageBucket: "sub-it-1825b.appspot.com",
-            messagingSenderId: "1082992891122",
-            appId: "1:1082992891122:web:696de41adf3809773f6c6b",
-            measurementId: "G-YH3BBNM56V"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        const db = firebase.firestore();
-
-        /* references*/
-
-
-        const userInp = document.getElementById("username");
-        const passInp = document.getElementById("password");
-        const email = document.getElementById("email");
-        const submitBtn = document.getElementById("submitBtn");
-
-        /* Validation*/
-
-        function Validation() {
-            if (!Validation()) {
-                return;
-            };
-            let nameregex = /^[a-zA-Z\s]+$/;
-            let emailregex = /^[a-zA-Z0-9]+@(gmail yahoo|outlook)\.com$/;
-            let userregex = /^[a-zA-Z0-9]{5,}$/;
-            if (!nameregex.test(name.value)) {
-                alert("the name should only contain alphabets!");
-                return false;
-            }
-
-            if (!emailregex.test(email.value)) {
-                alert("enter a valid email");
-                return false;
-            }
-
-            if (!userregex.test(username.value)) {
-                alert("-username can only be alphanumeric\n-username must be aleast 5 characters\n-username cannot contain spaces");
-                return false;
-            }
-            return true;
-        }
-
-        /*User Registeration*/
-
-        function RegisterUser() {
-
-            Validation();
-            const dbRef = ref(db);
-            get(child(dbRef, "UserList/" + username.value)).then((snapshot) => {
-                if (snapshot.exists()) {
-                    alert("Account Already Exists");
-                }
-                else {
-                    set(ref(db, "UserList/" + username.value),
-                        {
-                            username: userInp.value,
-                            email: email.value,
-                            password: passInp.value,
-                        }).then(() => {
-                            alert("user added succesfully");
-                        })
-                        .catch((error) => {
-                            alert("error" + error);
-                        })
-                }
-            })
-        }
-
-        /*Assign*/
-submit.addEventListener('click', RegisterUser);
-
-    </script>
 </body>
-
+<script src="loginapp.js" defer type="module"></script>
+<script src="googleAuthApp.js" defer type="module"></script> 
 </html>

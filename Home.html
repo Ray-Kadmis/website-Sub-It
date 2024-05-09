@@ -142,7 +142,10 @@
                 </div>
 
             </div>
-            <a href="Login.html" class="login-button">Login</a> <a href="register.html" class="login-button">Sign Up</a>
+            <a href="Login.html" id="viewBtn1LogedOut" class="login-button ">Login</a>
+            <a href="register.html" id="viewBtn2LogedOut" class="login-button ">Sign Up</a>
+            <h4 id="displayUsername"></h4>
+            <button id="viewBtnLogedIn" class="login-button">Sign Out</button>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -156,7 +159,7 @@
 
         <div class="container2 $orange-500">
             <div class="text1 poppins-medium">
-                LOOKING FOR A <span style="color: #fff; font-size: 60px;" id="element"></span>
+                LOOKING FOR A <span style="color: #fff; font-size: 60px;" class="element" id="element"></span>
             </div>
             <div class="para1 .poppins-regular">
                 <p>As one of the Best Recruitment Agency in UK, Sub-It Can Provide Both Temporary & Permanent
@@ -1132,13 +1135,13 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-12 keys">
-                                                    <div class="-lg"> col-md-12 col-sm-12
+                                                    <div class="col-3"> 
                                                         <h6><i class="fa-solid fa-tags"></i>Keywords:</h6>
                                                     </div>
-                                                    <div class="-lg"> col-md-12 col-sm-12
+                                                    <div class="col-3"> 
                                                         <h6> job title,</h6>
                                                     </div>
-                                                    <div class="-lg"> col-md-12 col-sm-12
+                                                    <div class="col-3">
                                                         <h6>location</h6>
                                                     </div>
                                                 </div>
@@ -3152,5 +3155,7 @@
         </div>
     </footer>
 </body>
-
+<script src="signOut.js" defer type="module"></script> 
+<script src="loginapp.js" defer type="module"></script> 
+<script src="googleAuthApp.js" defer type="module"></script> 
 </html>

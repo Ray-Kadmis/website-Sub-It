@@ -143,7 +143,10 @@
                 </div>
 
             </div>
-            <a href="Login.html" class="login-button">Login</a> <a href="register.html" class="login-button">Sign Up</a>
+            <a href="Login.html" id="viewBtn1LogedOut" class="login-button ">Login</a>
+            <a href="register.html" id="viewBtn2LogedOut" class="login-button ">Sign Up</a>
+            <h4 id="displayUsername"></h4>
+            <button id="viewBtnLogedIn" class="login-button">Sign Out</button>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -176,14 +179,14 @@
             Basic information
         </h2>
 
-        <label for="" required>Full Name:<span>*</span></label><br>
-        <input type="text">
+        <label for="fullname" required>Full Name:<span>*</span></label><br>
+        <input id="cvFullName" name="fullname" type="text">
         <br>
-        <label required for="contact-email">Email:<span>*</span></label><br>
-        <input type="email" placeholder="example@gmail.com" id="contact-email" name="contact-email" required><br><br>
+        <label required for="contactEmail">Email:<span>*</span></label><br>
+        <input type="email" placeholder="example@gmail.com" id="cvEmail" name="contactEmail" required><br><br>
 
-        <label required for="contact-number">Contact Number:<span>*</span></label>
-        <select id="country-code" name="country-code">
+        <label required for="cvContactNumber">Contact Number:<span>*</span></label>
+        <select id="cvCountryCode" name="country-code">
             <option value="+1" data-icon="US">+1 USA</option>
             <option value="+93">+93 Afghanistan</option>
             <option value="+355">+355 Albania</option>
@@ -416,39 +419,40 @@
             <option value="+260">+260 Zambia</option>
             <option value="+263">+263 Zimbabwe</option>
         </select>
-        <input type="tel" id="phone-number" name="phone-number" required><br><br>
+        <input type="tel" id="cvContactNumber" name="cvContactNumber" required><br><br>
 
         <h2>
             Professional Details
         </h2>
-        <label for="" required>Current Job Title:<span>*</span></label><br>
-        <input type="text">
+        <label for="Current-Job" required>Current Job Title:<span>*</span></label><br>
+        <input name="Current-Job" id="cvCurrentJob" type="text">
         <br>
-        <label for="" required>Base Pay Per Hour:</label><br>
-        <input type="text">
+        <label for="Base-Pay" required>Base Pay Per Hour:</label><br>
+        <input name="Base-Pay" id="cvBasePay" type="text">
         <br>
-        <label for="" required>Experience in Years:</label><br>
-        <input type="text">
+        <label for="Experience" required>Experience in Years:</label><br>
+        <input name="Experience" id="cvExperience" type="text">
         <br>
-        <label for="" required>Skill Set:</label><br>
-        <input type="text">
+        <label for="Skill-Set" required>Skill Set:</label><br>
+        <input name="Skill-Set" id="cvSkillSet" type="text"><span class="sideText"> separate skills with comas
+            e.g:(sewing, HR, Programming etc...)</span>
         <br>
         <h2>
             Address Information
         </h2>
-        <label for="" required>Job Location/ Postal Code:<span>*</span></label><br>
-        <input type="text">
+        <label for="cvLocation" required>Job Location/ Postal Code:<span>*</span></label><br>
+        <input name="cvLocation" id="cvLocation" type="text">
         <br>
-        <label for="" required>Street:</label><br>
-        <input type="text">
+        <label for="cvStreet" required>Street:</label><br>
+        <input name="cvStreet" id="cvStreet" type="text">
         <br>
-        <label for="" required>City:<span>*</span></label><br>
-        <input type="text">
+        <label for="cvCity" required>City:<span>*</span></label><br>
+        <input name="cvCity" id="cvCity" type="text">
         <br>
-        <label for="" required>State/Province</label><br>
-        <input type="text">
+        <label for="cvState" required>State/Province</label><br>
+        <input name="cvState" id="cvState" type="text">
         <br>
-        <select id="countrySel" name="" id="">
+        <select id="cvCountrySel" name="" id="">
             <option value="  " selected>Select a country</option>
             <option value="--">Not Specified</option>
             <option value="AF">Afghanistan</option>
@@ -695,17 +699,16 @@
         <h2>
             Attachment Information
         </h2>
-        <label for="upload-others">Upload Picture:</label><br>
-        <input type="file" id="upload-others" name="upload-others"
-            accept="image/jpeg, image/png, image/tiff, image/webp"><br><br>
-
+        <label for="upload-others">Upload Picture:</label>
+        <br>
+            <button id="uploadBtn2 "class=" subBtn">Upload</button><br><label for="" id="prog1"></label>
         <label for="upload-job-summary">Upload CV:</label><br>
-        <input type="file" id="upload-job-summary" name="upload-job-summary" accept=".pdf , .docx , .doc"><br><br>
-
-        <input class="formbtn resetbtn" type="reset" value="Reset">
-        <input class="formbtn subBtn" type="submit" value="Submit">
+        <input class="subBtn" value="Upload" type="button" id="uploadBtn1">
+        <p id="selectedFile"></p> <!-- Element to display selected file name -->
+        <div id="progressBar" style="width: 0%; height: 20px; background-color: #772d2d;"></div>
+       <br> <br><input class="formbtn resetbtn" type="reset" value="Reset">
+        <input class="formbtn subBtn" id="cvSubmit" type="submit" value="Submit">
     </form>
-
 
 
 
@@ -866,3 +869,5 @@
         </div>
     </footer>
 </body>
+<script src="CVupload.js" type="module"></script>
+</html>

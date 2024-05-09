@@ -5,6 +5,10 @@ html {
 
 }
 
+h4{
+    margin:20px 0px;
+    
+}
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -872,6 +876,10 @@ span {
     font-size: large;
 
 }
+.element{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
 
 .sideText {
     color: grey;
@@ -939,7 +947,7 @@ li {
 }
 
 .loginDiv1 {
-    
+
     height: 800px;
     width: 100%;
     justify-content: center;
@@ -948,89 +956,104 @@ li {
 }
 
 .loginDiv2 {
-    
-    height:max-content;
+
+    height: max-content;
     width: 50%;
     border-radius: 20px;
-    border-bottom: 5px solid #1a2934; 
+    border-bottom: 5px solid #1a2934;
     border-right: 5px solid #1a2934;
-    border-top: 2px solid #283D4D; 
+    border-top: 2px solid #283D4D;
     border-left: 2px solid #283D4D;
 }
 
 @media(max-width:400px) {
     .loginDiv2 {
-    
-        height:max-content;
+
+        height: max-content;
         width: 100%;
         border-radius: 20px;
-        border-bottom: 5px solid #cb9a14; 
+        border-bottom: 5px solid #cb9a14;
         border-right: 5px solid #cb9a14;
-        border-top: 2px solid #cb9a14; 
+        border-top: 2px solid #cb9a14;
         border-left: 2px solid #cb9a14;
     }
 
-    }
-.loginregBtn{
+}
+
+.loginregBtn {
     justify-content: center;
     width: 100%;
     margin-top: 10px;
     font-size: 16px;
     padding: 5px;
     display: inline-flex;
-   background: #cb9a14;
-    border-bottom: 2px solid; 
+    background: #cb9a14;
+    border-bottom: 2px solid;
     border-right: 2px solid;
-    border-top: 2px solid; 
+    border-top: 2px solid;
     border-left: 2px solid;
     border-radius: 15px;
     color: #000;
 }
 
-#signUp{
+.loginregBtn:hover {
+    padding: 7px;
+    color: #ffffff;
+    background-color: #614700;
+    transition: ease-in-out 0.3s;
+}
+
+#signUp {
     justify-content: center;
     width: 100%;
     margin: 0px;
     font-size: 16px;
     padding: 5.4px;
     display: inline-flex;
-   color: #000;
-    border-bottom: 2px solid; 
+    color: #000;
+    border-bottom: 2px solid;
     border-right: 2px solid;
-    border-top: 2px solid; 
+    border-top: 2px solid;
     border-left: 2px solid;
     border-radius: 15px;
 
 }
 
-.loginBtn{
+.loginBtn {
     justify-content: center;
     width: 100%;
-    margin: 0px;
+    margin: 5px 0px 0px 0px;
     font-size: 16px;
     padding: 5.4px;
     display: inline-flex;
-   color: #000;
-    border-bottom: 2px solid; 
+    color: #000;
+    border-bottom: 2px solid;
     border-right: 2px solid;
-    border-top: 2px solid; 
+    border-top: 2px solid;
     border-left: 2px solid;
     border-radius: 15px;
 
 }
 
-.logSwitch1{
+.loginBtn:hover {
+    padding: 7px;
+    color: #ffffff;
+    background-color: #283D4D;
+    transition: ease-in-out 0.3s;
+}
+
+.logSwitch1 {
     color: #cb9a14;
     padding: 0px;
-    margin:10px 5px 10px 5px;
+    margin: 10px 5px 10px 5px;
     font-size: small;
     margin-top: 10px;
 }
 
-.logSwitch2{
-    
+.logSwitch2 {
+
     padding: 0px;
     margin: 0px 10px 0px 0px;
-    
+
     margin-top: 10px;
 }
